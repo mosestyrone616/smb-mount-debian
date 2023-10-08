@@ -4,10 +4,9 @@ echo "Software by LS6 (2023) - Free to share and distribute"
 echo
 echo "This is a Debian program and it will not work properly on Arch. Press any key to continue."
 read confirm
-echo
 
-echo "Enter your exact username on this local system"
-read user
+name="$(whoami)"
+echo $name
 
 echo "Checking Dependancies..."
 sudo apt install cifs-utils -y
